@@ -1,0 +1,7 @@
+name: BookBoard
+version: '${project.version}'
+main: cn.kevyn.bookboard.BookBoard
+api-version: 1.19
+authors: [ kevyn ]
+description: Board in a book.
+website: kevyn.cn
