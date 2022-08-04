@@ -1,7 +1,20 @@
-name: BookBoard
+name: BookScoreBoard
 version: '${project.version}'
-main: cn.kevyn.bookboard.BookBoard
-api-version: 1.19
+main: cn.kevyn.bookscoreboard.BookScoreBoard
+api-version: 1.18
 authors: [ kevyn ]
-description: Board in a book.
+description: Scoreboard in a book.
 website: kevyn.cn
+softdepend: [PlaceholderAPI]
+permissions:
+  bsb.reload:
+    default: op
+  bsb.open:
+    default: true
+commands:
+  bsb-reload:
+    description: you can use this command to reload the config file
+    permission: bsb.reload
+  bsb-open:
+    description: you can use this command to open your book scoreboard
+    permission: bsb.open

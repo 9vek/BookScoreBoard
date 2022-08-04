@@ -1,0 +1,10 @@
+enable: true
+book-title: "Book Score Book"
+book-author: "%player_name%"
+page-1:
+  - "Book Score Board"
+  - "Name: %player_name%"
+  - "Workd: %player_world%"
+page-2:
+  - "Example Page 2"
+  - "§9example colorful message"
