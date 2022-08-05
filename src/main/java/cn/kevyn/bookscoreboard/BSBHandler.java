@@ -12,6 +12,7 @@ import org.bukkit.inventory.ItemStack;
 public class BSBHandler {
 
     public static BSBHandler INSTANCE = new BSBHandler();
+    boolean enabled;
     Map<String, ItemStack> playerBooks = new HashMap<String,ItemStack>();
     private String bookTitle;
     private String bookAuthor;
@@ -20,6 +21,7 @@ public class BSBHandler {
     public void loadConfig() {
         bookPages.clear();
         BookScoreBoard bsb = BookScoreBoard.INSTANCE;
+        enabled = bsb.getConfig().getBoolean("enable");
         bookTitle = bsb.getConfig().getString("book-title");
         bookAuthor = bsb.getConfig().getString("book-author");
         int pageNum = 1;

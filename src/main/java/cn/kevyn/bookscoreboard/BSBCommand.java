@@ -18,7 +18,7 @@ public class BSBCommand implements CommandExecutor {
         }
 
         else if (command.getName().equals("bsb-open")) {
-            if ((sender instanceof Player)) {
+            if (BSBHandler.INSTANCE.enabled && (sender instanceof Player)) {
                 BSBHandler.INSTANCE.openBook((Player)sender);
                 return true;
             }

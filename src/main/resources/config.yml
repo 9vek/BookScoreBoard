@@ -1,10 +1,21 @@
+# for colors, see https://www.spigotmc.org/resources/chatcolor.22692/
+# all of the following sections support PlaceHolder
 enable: true
 book-title: "Book Score Book"
 book-author: "%player_name%"
 page-1:
-  - "Book Score Board"
-  - "Name: %player_name%"
-  - "Workd: %player_world%"
+  - "    §l-- Score Board -- "
+  - "§0Hi, §6§l%player_name%§0. Here's your info:"
+  - "§0Your Group: §1§l%player_group%"
+  - "§0Your Team: §5§l%player_team%"
+  - "§0Your Level: §2§l%player_level%"
+  - "§0Your Exp: §2§l%player_exp%"
+  - "§0Your Money: §2§l%player_money%"
+  - "§0Your IP: §4§l%player_ip%"
+  - "§0Your Ping: §4§l%player_ping%"
+  - "§0§lHave a nice day! ^_^ "
 page-2:
-  - "Example Page 2"
-  - "§9example colorful message"
+  - "        §l-- Notice -- "
+  - "§0This is an §1example message §0you can put in the second page. Anyway, if you want, you can put any message in any page."
+  - "Now this plugin's function is quite simple, please keep an eye on the §6§lfuture updates§0!"
+
