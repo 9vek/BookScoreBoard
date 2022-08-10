@@ -40,7 +40,7 @@ public class BSBHandler {
 
     public void openBook(Player player) {
         String playerName = player.getName();
-        if (playerBooks.keySet().contains(playerName)) {
+        if (!playerBooks.keySet().contains(playerName)) {
             playerBooks.put(playerName, new ItemStack(Material.WRITTEN_BOOK));
         }
         ItemStack book = playerBooks.get(player.getName());
