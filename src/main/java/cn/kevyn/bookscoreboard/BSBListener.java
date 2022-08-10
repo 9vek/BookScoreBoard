@@ -15,7 +15,6 @@ public class BSBListener implements Listener {
         if (!BSBHandler.INSTANCE.playerBooks.keySet().contains(playerName)) {
             BSBHandler.INSTANCE.playerBooks.put(playerName, new ItemStack(Material.WRITTEN_BOOK));
         }
-
     }
 
 }

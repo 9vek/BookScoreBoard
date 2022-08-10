@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.ItemStack;
@@ -38,6 +39,10 @@ public class BSBHandler {
     }
 
     public void openBook(Player player) {
+        String playerName = player.getName();
+        if (playerBooks.keySet().contains(playerName)) {
+            playerBooks.put(playerName, new ItemStack(Material.WRITTEN_BOOK));
+        }
         ItemStack book = playerBooks.get(player.getName());
         BookMeta bookMeta = (BookMeta)book.getItemMeta();
         bookMeta.setTitle(TextParser.parseText(player, bookTitle));
